@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demo-demo1</title>
+    <title>demo1-移动端纯css滑动</title>
+    <style>
+        *{padding: 0px; margin: 0px;}
+        body{background-color:#f5f5f5;}
+        a{text-decoration: none;}
+        li{list-style: none;}
+.box{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #0a8cd2;
+  /*display: flex;*/
+  /*white-space: nowrap;*/
+  box-sizing: border-box;
+  overflow: auto;
+  overflow-x:hidden;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.item{
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  background: #899; 
+  display: inline-block;
+  font: 80px/100vh '';
+  text-align: center;
+  color: #fff;
+}
+.item:nth-child(2n){background-color: rgb(50, 71, 50);}
+    </style>
 </head>
 <body>
-    demo-demo1
+    <div class="box">
+        <div class="item">第一个</div>
+        <div class="item">第二个</div>
+        <div class="item">第三个</div>
+        <div class="item">第四个</div>
+        <div class="item">第五个</div>
+        <div class="item">第六个</div>
+    </view>
+    
 </body>
 </html>
