@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>home</title>
+    <style>
+        *{padding: 0px; margin: 0px;}
+        body{background-color:#f5f5f5;}
+        a{text-decoration: none;}
+        li{list-style: none;}
+    </style>
+    <style>
+        .logo_head{text-align: center; }
+        .logo_head img{vertical-align: middle;}
+        .logo_head span{vertical-align: middle;}
+        @media  (min-width:769px) {        
+            body{position: relative; height: 100vh;}
+            .io_worp{position: absolute; width: 1200px; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+            .logo_head span{ margin-left: 20px; font-size: 18px; color: #000;}
+        }
+        @media (max-width:768px) {
+            .logo_head span{ margin-left: 20px; font-size: 14px; color: #000;}
+        
+        }
+    </style>
 </head>
 <body>
-    Document
+    <div class="io_worp">
+        <div class="logo_head">
+            <img src="images/qingmiao.png"><span>githobio</span>
+        </div>
+    </div>
 </body>
 </html>

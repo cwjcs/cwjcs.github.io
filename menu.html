@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单</title>
+    <style>
+        *{padding: 0px; margin: 0px;}
+        body{background-color:#f5f5f5;}
+        a{text-decoration: none;}
+        li{list-style: none;}
+    </style>
+    <style>
+        /*io_menu start*/
+        @media  (min-width:769px) {   
+            .io_menu{width: 1200px; margin: auto; margin-top: 100px; overflow: hidden;}  
+            .io_menu ul{overflow: hidden; width: 105%;}
+            .io_menu ul li{width: 222px; transition: all 0.5s ease; border: 1px #fff solid; height: 90px; float: left; margin-bottom: 20px; margin-right: 20px; background-color: white;}
+            .io_menu ul li div{padding:0px 15px;}
+            .io_menu_lit{margin-top: 15px;}
+            .io_menu_lit a{display: block; overflow: hidden; height: 30px; line-height: 30px; color: #333;}
+            .io_menu_lic{line-height: 25px; height: 50px;font-size: 13px; color: #666;}
+            .io_menu ul li:hover{border: 1px #ddd solid;}
+            .io_menu_lit a:hover{color: #000;}
+        }
+        @media (max-width:768px) {
+            .io_menu{width: 98%; margin: auto; margin-top: 80px; overflow: hidden;}  
+            .io_menu ul{overflow: hidden; width: 100%;}
+            .io_menu ul li{width: 46%; transition: all 0.5s ease; height:90px; float: left; margin-bottom: 10px; margin-left: 2%;margin-right: 2%; background-color: white;}
+            .io_menu ul li div{padding:0px 10px;}
+            .io_menu_lit{margin-top: 15px;}
+            .io_menu_lit a{display: block; overflow: hidden; height: 30px; line-height: 30px; color: #333;}
+            .io_menu_lic{line-height: 25px; height: 50px;font-size: 13px; color: #666;}
+            
+            .io_menu_lit a:hover{color: #000;}
+        }
+        /*io_menu end*/
+    </style>
+</head>
+<body>
+    <div class="io_menu">
+        <ul>
+            <li>
+                <div class="io_menu_lit"><a href="./demo/demo1.html"> 纯CSS滑屏</a></div>
+                <div class="io_menu_lic">使用实现纯CSS滑屏</div>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
